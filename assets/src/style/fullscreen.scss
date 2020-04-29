@@ -1,0 +1,50 @@
+.fullscreen{
+  min-height: 100vh;
+  background-color: #1F3899;
+  display: flex; // для работы с контентом блока
+  padding: 20px 0;
+
+  &_two{
+    background-color: #263940;
+  }
+
+  &_bg{
+    background: url("../img/parallax-bg.jpg") center / cover no-repeat fixed;
+  }
+
+  &__body{
+    flex: 1 1 auto;
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%; // лекарство для осла
+    padding: 0 20px;
+    position: relative;
+  }
+  &__title{
+    @include font-size(80px);
+    @include line-height(90px);
+    margin: 0 0 20px 0;
+  }
+  &__text{
+    @include font-size(20px);
+    @include line-height(28px);
+    margin: 0 0 20px 0;
+    p{
+      margin:0 0 2rem 0;
+    }
+  }
+  &__link{
+    display: inline-block;
+    @include line-height(50px);
+    text-transform: uppercase;
+    color: #ffffff;
+    @include letter-spacing(2px);
+    background-color: #80E8E8;
+    align-self: center;
+    padding: 0 20px;
+  }
+}

@@ -1,0 +1,14 @@
+.content{
+
+  &__body{
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 50px 20px;
+    p{
+      margin: 0 0 20px 0;
+      &:last-child{
+        margin: 0;
+      }
+    }
+  }
+}

@@ -1,0 +1,7 @@
+.image{
+  display: block;
+  margin: 1rem auto 2rem auto;
+  @include box(200px,200px);
+  border-radius: 50%;
+  overflow: hidden;
+}
